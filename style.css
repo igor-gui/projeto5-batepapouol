@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 375px;
+    height: 767px;
+    position: relative;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+    position: absolute;
+}
+
+.container-cabecalho {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 22px;
+}
+
+.container-cabecalho :nth-child(1){
+    width: 42.2;
+    height: 30.94px;
+}
+
+.container-cabecalho :nth-child(2){
+    height: 30.94px;
+    width: 42.2px;
+}
+
+.principal {
+    background-color: #E5E5E5;
+    width: 100%;
+    height: 507px;
+    margin-top: 80px;
+}
+
+.msg {
+    border-radius: 2px;
+    width: 100%;
+    min-height: 40px;
+
+}
+
+.mensagem {
+    background-color: #FFFFFF;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+    height: 80px;
+    width: 375px;
+    position: absolute;
+    top: 587px
+}
+
+.container-mensagem {
+    width: 100%;
+    height: 100%;
+}
+
+
+.campoDigitacao::placeholder {
+    color: #000000; 
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    text-align: left;
+}
+
+.enviar {
+    height: 26px;
+    width: 26px;
+}
