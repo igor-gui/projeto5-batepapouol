@@ -13,7 +13,15 @@
 <body>
 
     <div class="container">
-
+        <div class="login">
+            <div class="box-login">
+                <img class="logo" src="./batePapo.png">
+                <div class="dados">
+                    <input class="nickName" type="text" placeholder="Digite seu nome">
+                    <input class="entrar" onclick="enter(this.parentNode)" type="button" value="Entrar">
+                </div>
+            </div>
+        </div>
         <header class="cabecalho">
             <div class="container-cabecalho">
                 <img src="batePapo.png">
@@ -28,13 +36,14 @@
                     <div class="msg door">
                         <span class="time">(09:21:45)</span> <b class="username"> João</b> entra na sala...
                     </div>
-                    
+
                     <div class="msg reservada">
-                        <span class="time">(09:21:45)</span> <b class="username"> João</b> reservadamente para <b class="username"> Maria</b>
+                        <span class="time">(09:21:45)</span> <b class="username"> João</b> reservadamente para <b
+                            class="username"> Maria</b>
                     </div>
-                    
+
                     <div class="msg">
-                        <span class="time">(09:21:45)</span>  <b class="username"> João</b>  entra na sala...
+                        <span class="time">(09:21:45)</span> <b class="username"> João</b> entra na sala...
                     </div>
                 </div>
             </div>
@@ -43,9 +52,9 @@
 
         <footer class="rodape">
 
-            <div class="container-mensagem">
+            <div class="container-rodape">
                 <input class="campoDigitacao" type="text" placeholder="Escreva Aqui">
-                <ion-icon class="enviar" name="paper-plane-outline"></ion-icon>
+                <ion-icon onclick="enviarMensagem(this)" class="enviar" name="paper-plane-outline"></ion-icon>
             </div>
 
         </footer>
@@ -55,6 +64,7 @@
 
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
 </body>
 

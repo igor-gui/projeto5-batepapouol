@@ -5,7 +5,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: #000000;
-    
+
 }
 
 .container {
@@ -17,6 +17,72 @@ body {
     position: relative;
 }
 
+.login {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #FFFFFF;
+    z-index: 5;
+}
+
+.box-login {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    height: 92px;
+    margin-top: 72px;
+    margin-bottom: 94px;
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 261px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nickName {
+
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    height: 54px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px #D7D7D7 solid;
+}
+
+.nickName ::placeholder {
+    font-family: 'Roboto';
+    color: #AEAEAE;
+}
+
+.entrar {
+    height: 45px;
+    width: 109px;
+    border-radius: 9px;
+    border: 0;
+    background-color: #E7E7E7;
+    color: #696969;
+    font-family: 'Roboto';
+}
+
+.entrar ::-ms-value{
+    color: #696969;
+}
+
+.entrar:hover{
+    cursor: pointer;
+    background-color: #928e8e;
+}
 .cabecalho {
     width: 100%;
     height: 80px;
@@ -37,12 +103,12 @@ body {
     padding: 22px;
 }
 
-.container-cabecalho :nth-child(1){
+.container-cabecalho :nth-child(1) {
     width: 42.2;
     height: 30.94px;
 }
 
-.container-cabecalho :nth-child(2){
+.container-cabecalho :nth-child(2) {
     height: 30.94px;
     width: 42.2px;
 }
@@ -50,8 +116,9 @@ body {
 .principal {
     background-color: #E5E5E5;
     width: 100%;
-    height: 507px;
+    height: 100%;
     margin-top: 80px;
+    overflow-y: scroll;
 }
 
 .msgs {
@@ -69,7 +136,13 @@ body {
     background-color: #FFFFFF;
     display: flex;
     align-items: center;
+    gap: 4px;
+    overflow-wrap: break-word;
+}
 
+
+.username {
+    font-weight: 700;
 }
 
 .door {
@@ -77,7 +150,7 @@ body {
 }
 
 .reservada {
-    background-color:  #FFDEDE;
+    background-color: #FFDEDE;
 }
 
 .rodape {
@@ -86,10 +159,10 @@ body {
     height: 80px;
     width: 375px;
     position: absolute;
-    top: 587px
+    top: 687px;
 }
 
-.container-mensagem {
+.container-rodape {
     width: 100%;
     height: 100%;
     display: flex;
@@ -102,10 +175,12 @@ body {
 .campoDigitacao {
     border-style: none;
     outline: 0;
+    flex-wrap: wrap;
+    width: 50%;
 }
 
 .campoDigitacao::placeholder {
-    color: #000000; 
+    color: #000000;
     opacity: 1;
     font-family: Roboto;
     font-size: 18px;
@@ -119,4 +194,10 @@ body {
     width: 26px;
 }
 
+.enviar:hover {
+    cursor: pointer;
+}
 
+.hidden {
+    display: none;
+}
