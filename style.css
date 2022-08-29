@@ -5,6 +5,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: #000000;
+    margin-top: 40px;
 
 }
 
@@ -19,7 +20,7 @@ body {
 
 .login {
     width: 100%;
-    height: 100%;
+    height: 110%;
     position: absolute;
     background-color: #FFFFFF;
     z-index: 5;
@@ -75,14 +76,15 @@ body {
     font-family: 'Roboto';
 }
 
-.entrar ::-ms-value{
+.entrar ::-ms-value {
     color: #696969;
 }
 
-.entrar:hover{
+.entrar:hover {
     cursor: pointer;
     background-color: #928e8e;
 }
+
 .cabecalho {
     width: 100%;
     height: 80px;
@@ -127,6 +129,7 @@ body {
     gap: 4px;
     background-color: #E5E5E5;
     margin-top: 26px;
+    margin-bottom: 5px;
 }
 
 .msg {
@@ -135,9 +138,8 @@ body {
     min-height: 40px;
     background-color: #FFFFFF;
     display: flex;
-    align-items: center;
     gap: 4px;
-    overflow-wrap: break-word;
+    text-overflow:ellipsis;
 }
 
 
@@ -145,7 +147,7 @@ body {
     font-weight: 700;
 }
 
-.door {
+.status {
     background-color: #DCDCDC;
 }
 
@@ -159,7 +161,7 @@ body {
     height: 80px;
     width: 375px;
     position: absolute;
-    top: 687px;
+    top: 767px;
 }
 
 .container-rodape {
