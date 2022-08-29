@@ -139,19 +139,24 @@ body {
     background-color: #FFFFFF;
     display: flex;
     gap: 4px;
-    text-overflow:ellipsis;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    padding-top: 10px;
 }
 
 
 .username {
     font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .status {
     background-color: #DCDCDC;
 }
 
-.reservada {
+.private_message {
     background-color: #FFDEDE;
 }
 
